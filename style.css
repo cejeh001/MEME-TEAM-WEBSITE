@@ -1,3 +1,31 @@
-h1{
-    font-family: 'Courier New', Courier, monospace;
+/* Apply flexbox to center everything */
+main {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    min-height: 100vh;       /* makes the container take the full height of the page */
+    flex-direction: column;  /* stacks elements vertically */
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.meme-container {
+    align-self: center; /* centers this item within the flexbox */
+}
+
+.button-container {
+    align-self: center; /* centers this item within the flexbox */
+    padding: 10px;
+    margin: 50px;
+}
+
+.button{
+    background-color: hsl(hue, saturation, lightness);
 }
