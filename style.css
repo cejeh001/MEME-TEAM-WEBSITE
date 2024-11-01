@@ -1,3 +1,8 @@
+/* background design */
+html{
+    background-color: #e8b4fd;
+}
+
 /* Apply flexbox to center everything */
 main {
     display: flex;
