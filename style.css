@@ -27,8 +27,11 @@ h1 {
 
 .button-container {
     align-self: center; /* centers this item within the flexbox */
-    padding: 10px;
-    margin: 50px;
+    padding: 10px; 
+    margin: 50px;  /* adds some space around the button */
+    font-size: 300px;  /* makes the button text really big */
+
+    
 }
 
 .button{
