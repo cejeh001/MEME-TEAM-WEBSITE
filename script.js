@@ -13,7 +13,7 @@ function generateMeme() {
     const totalMemes = 254;   // number of memes in the folder
 
     // select a random meme
-    const randomIndex = Math.floor(math.random() * totalMemes) + 1;
+    let randomIndex = Math.floor(math.random() * totalMemes) + 1;
     const memePath = `${folderPath}meme${randomIndex}.jpg`;
 
     //dislpay the random meme
