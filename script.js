@@ -8,8 +8,8 @@ const memeContainer = document.getElementById("meme-container")
 function generateMeme() {
     // meme collection
     const folderPath = "memes/";
-    const totalimages = 254;   // number of memes in the folder
-    const totalGifs = 7
+    const totalImages = 254;   // number of memes in the folder
+    const totalGifs = 7;
 
     let meme;
     let memePath;
@@ -24,19 +24,16 @@ function generateMeme() {
     if (decidedFileType === img) {
         let randomIndex = Math.floor(Math.random() * totalImages) + 1; // Corrected Math.random()
         memePath = `${folderPath}${randomIndex}.jpg`;
-    }
-
-    else {
+    } else {
         let randomIndex = Math.floor(Math.random() * totalGifs) + 1; //select between total gifs
         memePath = `${folderPath}${randomIndex}.gif`;
     }
 
     // display the random meme
-
-    // if the meme is an image
     meme = document.createElement('img');
     meme.src = memePath;
     memeContainer.appendChild(meme);
 }
+
 //link function to generate button
 button.addEventListener("click", generateMeme);
