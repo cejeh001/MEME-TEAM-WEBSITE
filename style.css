@@ -32,6 +32,8 @@ h1 {
     width: auto;   /* Maintain the aspect ratio */
     align-self: center; /* Center the image */
     object-fit: cover; /* Ensure the image fills the space without distortion */
+    border: 2px solid white; /* Add a white thin border */
+    
 }
 
 #button-container {
