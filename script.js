@@ -7,7 +7,8 @@ const memeContainer = document.getElementById("meme-container")
 
 function generateMeme() {
     // meme collection
-    const folderPath = "memes/";
+    const imageFolderPath = "memes/images";
+    const gifFolderPath = "memes/gifs";
     const totalImages = 254;   // number of memes in the folder
     const totalGifs = 7;
 
@@ -23,10 +24,10 @@ function generateMeme() {
 
     if (decidedFileType === img) {
         let randomIndex = Math.floor(Math.random() * totalImages) + 1; // Corrected Math.random()
-        memePath = `${folderPath}${randomIndex}.jpg`;
+        memePath = `${imageFolderPath}${randomIndex}.jpg`;
     } else {
         let randomIndex = Math.floor(Math.random() * totalGifs) + 1; //select between total gifs
-        memePath = `${folderPath}${randomIndex}.gif`;
+        memePath = `${gifFolderPath}${randomIndex}.gif`;
     }
 
     // display the random meme
