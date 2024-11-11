@@ -3,7 +3,7 @@
 // button variable
 let button = document.getElementById('button')
 
-const memeContainer = document.getElementById("meme")
+const memeContainer = document.getElementById("meme-container")
 
 function generateMeme() {
     // meme collection
@@ -12,6 +12,7 @@ function generateMeme() {
     const totalGifs = 7
 
     let meme;
+    let memePath;
 
     // file type
     const img = 1;
@@ -22,23 +23,20 @@ function generateMeme() {
 
     if (decidedFileType === img) {
         let randomIndex = Math.floor(Math.random() * totalImages) + 1; // Corrected Math.random()
-        const memePath = `${folderPath}${randomIndex}.jpg`;
+        memePath = `${folderPath}${randomIndex}.jpg`;
     }
 
     else {
         let randomIndex = Math.floor(Math.random() * totalGifs) + 1; //select between total gifs
-        const memePath = `${folderPath}${randomIndex}.gif`;
+        memePath = `${folderPath}${randomIndex}.gif`;
     }
 
     // display the random meme
 
     // if the meme is an image
-    if (decidedFileType === 1){
-        meme = Document.createElement('img')
-        meme.src = memePath;
-    }
-
+    meme = document.createElement('img');
+    meme.src = memePath;
+    memeContainer.appendChild(meme);
 }
-
 //link function to generate button
 button.addEventListener("click", generateMeme);

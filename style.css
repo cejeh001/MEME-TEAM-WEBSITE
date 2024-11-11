@@ -21,13 +21,13 @@ h1 {
     border: 1px solid black;
 }
 
-.meme-container {
+#meme-container {
     align-self: center; /* centers this item within the flexbox */
     margin: auto; /* adds some space around the item */
 }
 
 /* image */
-img{
+#meme-container img{
     height: 400px; /* Set the desired fixed height */
     width: auto;   /* Maintain the aspect ratio */
     align-self: center; /* Center the image */
