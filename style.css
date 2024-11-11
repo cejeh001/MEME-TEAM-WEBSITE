@@ -23,15 +23,22 @@ h1 {
 
 .meme-container {
     align-self: center; /* centers this item within the flexbox */
+    margin: auto; /* adds some space around the item */
+}
+
+/* image */
+img{
+    height: 400px; /* Set the desired fixed height */
+    width: auto;   /* Maintain the aspect ratio */
+    align-self: center; /* Center the image */
+    object-fit: cover; /* Ensure the image fills the space without distortion */
 }
 
 .button-container {
-    align-self: center; /* centers this item within the flexbox */
+    align-self: flex-end center; /* Aligns the button to the bottom of the flex container */
     padding: 10px; 
-    margin: 50px;  /* adds some space around the button */
-    font-size: 300px;  /* makes the button text really big */
-
-    
+    margin: 20px;  /* Adjust margin as needed */
+    font-size: 30px; /* Adjust font size as needed */
 }
 
 .button{
