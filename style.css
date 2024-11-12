@@ -24,10 +24,11 @@ main {
 }
 
 #logo{
-    width: 75%;
+    width: 60%;
     height:auto;
-    align-self: center;
-    padding: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header */
@@ -52,8 +53,14 @@ main {
 }
 
 #meme-container img {
+
+    height: 600px;
+    width: auto;
+    
     max-width: 100%;
-    max-height: 400px; /* Restrict size for balance */
+    max-height: 400px; /*Restrict size for balance*/
+
+
     border-radius: 10px; /* Smooth corners */
     object-fit: cover;
     animation: fadeIn 0.5s ease-in-out; /* Subtle animation */
@@ -78,6 +85,7 @@ main {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); /* Matching shadow */
+    position: absolute;
 }
 
 #button:hover {
