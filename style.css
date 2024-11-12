@@ -1,6 +1,7 @@
 /* background design */
 html{
-    background-color: #e8b4fd;
+    /* background-color: #e8b4fd; */
+    max-width: 100%;
 }
 
 /* Apply flexbox to center everything */
@@ -28,12 +29,10 @@ h1 {
 
 /* image */
 #meme-container img{
-    height: 500px; /* Set the desired fixed height */
-    width: auto;   /* Maintain the aspect ratio */
+    max-width: 500px; /* Set the desired fixed height */
+    height: auto;   /* Maintain the aspect ratio */
     align-self: center; /* Center the image */
-    object-fit: cover; /* Ensure the image fills the space without distortion */
-    border: 2px solid white; /* Add a white thin border */
-    
+    object-fit: cover; /* Ensure the image fills the space without distortion */    
 }
 
 #button-container {
@@ -44,6 +43,46 @@ h1 {
 }
 
 #button{
-    background-color: hsl(0, 0%, 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 10px 20px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* background-color: #e8b4fd; */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+}
+
+/* Footer Links */
+footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Margin between links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Links */
+footer a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    footer a {
+        display: block; /* Stack links vertically on small screens */
+        margin: 10px 0; /* Margin for vertical spacing */
+    }
 }
