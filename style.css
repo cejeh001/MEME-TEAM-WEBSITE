@@ -23,15 +23,22 @@ main {
     gap: 20px; /* Space between elements */
 }
 
+#logo{
+    width: 75%;
+    height:auto;
+    align-self: center;
+    padding: 2px;
+}
+
 /* Header */
-h1 {
+/* h1 {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 3rem;
     color: #ffcc00; /* Vibrant gold for a pop of colour */
-    text-shadow: 0 0 10px #ffcc00; /* Glow effect */
-    border-bottom: 2px solid #444; /* Subtle underline */
-    padding-bottom: 10px;
-}
+    /* text-shadow: 0 0 10px #ffcc00; /* Glow effect */
+    /* border-bottom: 2px solid #444; Subtle underline */
+    /* padding-bottom: 10px; */
+/* } */
 
 /* Meme Container */
 #meme-container {
@@ -40,7 +47,7 @@ h1 {
     align-items: center;
     background-color: #1f1f1f; /* Subtle card background */
     border-radius: 15px;
-    padding: 20px;
+    /* padding: 20px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
