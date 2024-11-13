@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Background with Vibrant Highlights */
+html {
+    background-color: #121212; /* Sleek dark mode background */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    max-width: 100%;
+}
+
+p, h1{
+    text-align: center; /* Center text within the paragraph */
+    margin: 0 auto; /* Center the paragraph element itself */
+}
+
+footer {
+    position: fixed; /* Fixes the footer to the viewport */
+    bottom: 0; /* Aligns it to the bottom */
+    left: 0;
+    width: 100%; /* Ensures it spans the full width */
+    background-color: #1f1f1f; /* Match meme container */
+    color: #aaaaaa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444; /* Subtle separation */
+    z-index: 10; /* Keeps it above other elements */
+}
+
+footer a {
+    color: #ffcc00; /* Match header colour */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff5733; /* Match button colour */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    #meme-container img {
+        max-height: 300px;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
