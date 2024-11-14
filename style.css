@@ -16,6 +16,19 @@ html {
 p{
     text-align: center; /* Center text within the paragraph */
     margin: 0 auto; /* Center the paragraph element itself */
+    font-size: 200%;
+    font-weight:bold;
+    display: block;
+    max-width: 50%;
+    color: rgba(247, 203, 26, 0.962);
+}
+
+#logo{
+    width: 30%;
+    height:auto;
+    display: block;
+    margin: auto;
+    padding: 2px;
 }
 
 /* Center Content */
@@ -23,17 +36,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 65vh;
     flex-direction: column;
     gap: 20px; /* Space between elements */
 }
 
-#logo{
-    width: 75%;
-    height:auto;
-    margin: 0 auto;
-    padding: 2px;
-}
+
 
 /* Header */
 /* h1 {
@@ -57,6 +65,9 @@ main {
 }
 
 #meme-container img {
+    height: 50%;
+    width: auto;
+
     max-width: 100%;
     max-height: 400px; /* Restrict size for balance */
     border-radius: 10px; /* Smooth corners */
@@ -70,6 +81,7 @@ main {
     justify-content: center;
     width: 100%;
     margin: 10px 0;
+    position:relative;
 }
 
 #button {
