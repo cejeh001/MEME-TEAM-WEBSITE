@@ -21,6 +21,7 @@ p{
     display: block;
     max-width: 50%;
     color: rgba(247, 203, 26, 0.962);
+    margin-top: 5%;
 }
 
 #logo{
@@ -30,7 +31,12 @@ p{
     margin: auto;
     padding: 2px;
 }
-
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: #232323;
+    margin: 35px 0 10px;
+}
 /* Center Content */
 main {
     display: flex;
@@ -60,12 +66,11 @@ main {
     align-items: center;
     background-color: #1f1f1f; /* Subtle card background */
     border-radius: 15px;
-    /* padding: 20px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
 #meme-container img {
-    height: 50%;
+    height: 100%;
     width: auto;
 
     max-width: 100%;
@@ -94,12 +99,12 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); /* Matching shadow */
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Red glow */
 }
 
 #button:hover {
     background-color: #c70039; /* Darker red for hover */
-    box-shadow: 0 6px 15px rgba(255, 87, 51, 0.8); /* Amplify shadow */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Amplify shadow */
     transform: scale(1.05); /* Slight grow effect */
 }
 
