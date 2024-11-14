@@ -13,6 +13,13 @@ html {
     max-width: 100%;
 }
 
+.divider{
+    height: 2px;
+    background-color: #2f2f2f;
+    width: 100%;
+    margin: 10px 0 10px;
+}
+
 p{
     text-align: center; /* Center text within the paragraph */
     margin: 0 auto; /* Center the paragraph element itself */
@@ -21,6 +28,7 @@ p{
     display: block;
     max-width: 50%;
     color: rgba(247, 203, 26, 0.962);
+    margin-top: 15%;
 }
 
 #logo{
@@ -65,24 +73,21 @@ main {
 }
 
 #meme-container img {
-    height: 50%;
+    height: 100%;
     width: auto;
 
     max-width: 100%;
     max-height: 400px; /* Restrict size for balance */
+
+    border: 10px solid rgb(31, 31, 31);
+
     border-radius: 10px; /* Smooth corners */
     object-fit: cover;
     animation: fadeIn 0.5s ease-in-out; /* Subtle animation */
 }
 
 /* Button Container */
-#button-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0;
-    position:relative;
-}
+
 
 #button {
     background-color: #ff5733; /* Bright, bold orange */
@@ -94,12 +99,13 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5); /* Matching shadow */
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Red glow */
+
 }
 
 #button:hover {
     background-color: #c70039; /* Darker red for hover */
-    box-shadow: 0 6px 15px rgba(255, 87, 51, 0.8); /* Amplify shadow */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Amplify shadow */
     transform: scale(1.05); /* Slight grow effect */
 }
 
